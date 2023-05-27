@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -63,7 +64,8 @@
     <Spinner
         android:id="@+id/spinnerFlavors"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ListView
         android:id="@+id/listViewFlavors"
@@ -103,26 +105,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:background="@color/colorBackground"
         android:padding="10dp">
 
-        <Button
-            android:id="@+id/buttonSubmit"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textViewOrder"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Concluir"
-            android:backgroundTint="#FF0000"
-            android:textColor="#FFFFFF" />
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
 
-        <Button
-            android:id="@+id/buttonClear"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Limpar"
-            android:backgroundTint="#FF0000"
-            android:textColor="#FFFFFF"
-            android:layout_marginLeft="10dp"/>
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concluir"
+                android:backgroundTint="#FF0000"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpar"
+                android:backgroundTint="#FF0000"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
