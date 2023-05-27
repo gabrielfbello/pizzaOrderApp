@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedido de Pizza"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da Pizza"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPizzaSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pequena" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grande" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabores"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFlavors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/listViewFlavors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonRemoveFlavor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remover sabor"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extras"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBorda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borda recheada" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRefrigerante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refrigerante" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concluir"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

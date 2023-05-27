@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flavors_array">
+        <item>Mussarela</item>
+        <item>Calabresa</item>
+        <item>Quatro queijos</item>
+        <item>Pepperoni</item>
+        <item>Portuguesa</item>
+        <item>Frango com catupiry</item>
+        <item>Baiana</item>
+        <item>Brócolis com Bacon</item>
+        <item>Vegetariana</item>
+        <item>Atum</item>
+        <item>Chocolate</item>
+    </string-array>
+</resources>
